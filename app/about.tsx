@@ -1,10 +1,13 @@
+import { Link } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 
-export default function App() {
+export default function About() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app! Farzeen</Text>
+      <Link href={'/'}>
+        <Text>Go To Home</Text>
+      </Link>
       <StatusBar style="auto" />
     </View>
   );
