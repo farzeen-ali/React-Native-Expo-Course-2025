@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <View style={styles.container}>
       <Link href={'/about'}>
-        <Text>About</Text>
+        <Text className="text-red-800 text-3xl">About</Text>
       </Link>
       <StatusBar style="auto" />
     </View>

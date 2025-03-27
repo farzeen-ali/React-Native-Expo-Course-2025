@@ -6,7 +6,7 @@ export default function About() {
   return (
     <View style={styles.container}>
       <Link href={'/'}>
-        <Text>Go To Home</Text>
+        <Text className="text-blue-500 text-3xl">Go To Home</Text>
       </Link>
       <StatusBar style="auto" />
     </View>
