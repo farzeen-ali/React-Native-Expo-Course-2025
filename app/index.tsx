@@ -11,6 +11,9 @@ export default function Home() {
       <Link href={'/contact'}>
         <Text className="text-blue-800 text-3xl">Contact</Text>
       </Link>
+      <Link href={'/card'}>
+        <Text className="text-yellow-500 text-3xl">Card</Text>
+      </Link>
       <StatusBar style="auto" />
     </View>
   );
