@@ -8,6 +8,9 @@ export default function Home() {
       <Link href={'/about'}>
         <Text className="text-red-800 text-3xl">About</Text>
       </Link>
+      <Link href={'/contact'}>
+        <Text className="text-blue-800 text-3xl">Contact</Text>
+      </Link>
       <StatusBar style="auto" />
     </View>
   );
