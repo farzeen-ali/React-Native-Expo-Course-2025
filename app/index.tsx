@@ -14,6 +14,9 @@ export default function Home() {
       <Link href={'/card'}>
         <Text className="text-yellow-500 text-3xl">Card</Text>
       </Link>
+      <Link href={'/hooks'}>
+        <Text className="text-green-500 text-3xl">Hooks</Text>
+      </Link>
       <StatusBar style="auto" />
     </View>
   );
