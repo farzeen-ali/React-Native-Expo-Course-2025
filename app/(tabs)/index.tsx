@@ -23,6 +23,9 @@ export default function Home() {
       <Link href={'/api'}>
         <Text className="text-pink-500 text-3xl">API</Text>
       </Link>
+      <Link href={'/rhf'}>
+        <Text className="text-blue-900 text-3xl">Form Validation</Text>
+      </Link>
       <StatusBar style="auto" />
     </View>
   );
