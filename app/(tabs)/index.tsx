@@ -20,6 +20,9 @@ export default function Home() {
       <Link href={'/category'}>
         <Text className="text-purple-500 text-3xl">Category</Text>
       </Link>
+      <Link href={'/api'}>
+        <Text className="text-pink-500 text-3xl">API</Text>
+      </Link>
       <StatusBar style="auto" />
     </View>
   );
