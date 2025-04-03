@@ -15,7 +15,7 @@ const Login = () => {
         await AsyncStorage.setItem("user", JSON.stringify(userData));
         await SecureStore.setItemAsync("authToken", token);
 
-        router.push("/dashboard");
+        router.push("/dashboardd");
     }
 
   return (
