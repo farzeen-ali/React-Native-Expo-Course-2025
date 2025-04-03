@@ -4,8 +4,8 @@ import { useRouter } from 'expo-router';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import * as SecureStore from 'expo-secure-store';
 
-interface User {
-    username: string;
+interface User{
+    username: string
 }
 
 const Dashboard = () => {
@@ -14,22 +14,21 @@ const Dashboard = () => {
     const router = useRouter();
 
     useEffect(() => {
-        async function fetchData(){
+        const fetchData = async () => {
             const storedUser = await AsyncStorage.getItem("user");
             const storedToken = await SecureStore.getItemAsync("authToken");
-         
+
             if(storedUser){
-                setUser(JSON.parse(storedUser))
+                setUser(JSON.parse(storedUser));
             }
             if(storedToken){
-                setToken(storedToken)
+                setToken(storedToken);
             }
         }
-
         fetchData();
     }, []);
 
-    const handleLogOut = async () => {
+    const handleLogout = async () => {
         await AsyncStorage.removeItem("user");
         await SecureStore.deleteItemAsync("authToken");
 
@@ -41,15 +40,14 @@ const Dashboard = () => {
       {
         user ? (
             <View>
-                <Text className='text-white text-lg mb-2'>Username: {user.username} </Text>
-                <Text className='text-white text-lg mb-4'>Token: {token || "No Token Found"} </Text>
-                <TouchableOpacity className='bg-red-500 px-6 py-3 rounded-lg' onPress={handleLogOut}>
+                <Text className='text-lg text-white'>Username: {user.username}!</Text>
+                <Text className='text-lg text-white'>Token: {token || "No Token Found"}</Text>
+                <TouchableOpacity className='bg-red-500 px-6 py-3 rounded-lg' onPress={handleLogout}>
                         <Text className='text-white text-lg'>Logout</Text>
                 </TouchableOpacity>
             </View>
-        ) : 
-        (
-            <Text className='text-gray-400'>Loadinggggggggg.....</Text>
+        ) : (
+            <Text className='text-gray-500'>Loading!!!!</Text>
         )
       }
     </View>

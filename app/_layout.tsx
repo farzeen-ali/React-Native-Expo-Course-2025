@@ -7,7 +7,7 @@ import { MaterialIcons } from "@expo/vector-icons";
 
 export default function Layout(){
     return(
-        <GestureHandlerRootView>
+        <GestureHandlerRootView> 
             <Drawer screenOptions={{
                 drawerStyle: { backgroundColor: '#000' },
                 drawerActiveTintColor: "#0f0",
@@ -41,7 +41,6 @@ export default function Layout(){
                         )
                     }}
                 />
-
             </Drawer>
             {/* <Stack>
                 <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
