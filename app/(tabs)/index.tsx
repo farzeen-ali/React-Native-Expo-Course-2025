@@ -26,9 +26,6 @@ export default function Home() {
       <Link href={'/rhf'}>
         <Text className="text-blue-900 text-3xl">Form Validation</Text>
       </Link>
-      <Link href={'/login'}>
-        <Text className="text-red-900 text-3xl">Go to Login</Text>
-      </Link>
       <StatusBar style="auto" />
     </View>
   );
