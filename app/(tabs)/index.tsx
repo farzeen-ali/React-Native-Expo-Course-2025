@@ -38,6 +38,9 @@ export default function Home() {
       <Link href={'/redux-toolkit'}>
         <Text className="text-purple-900 text-3xl">Redux Toolkit</Text>
       </Link>
+      <Link href={'/zustand'}>
+        <Text className="text-purple-900 text-3xl">Zustand</Text>
+      </Link>
       <StatusBar style="auto" />
     </View>
   );
