@@ -35,6 +35,9 @@ export default function Home() {
       <Link href={'/context-api'}>
         <Text className="text-pink-200 text-3xl">Context Api</Text>
       </Link>
+      <Link href={'/redux-toolkit'}>
+        <Text className="text-purple-900 text-3xl">Redux Toolkit</Text>
+      </Link>
       <StatusBar style="auto" />
     </View>
   );

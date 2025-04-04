@@ -4,12 +4,15 @@ import { Slot, Stack } from "expo-router";
 import { Drawer } from 'expo-router/drawer';
 import "../global.css"
 import { MaterialIcons } from "@expo/vector-icons";
-import { CounterProvider } from "./store/CounterContext";
+import { Provider } from "react-redux";
+// import { CounterProvider } from "./store/CounterContext";
+import { store } from './redux/store/index';
 
 export default function Layout(){
     return(
         <GestureHandlerRootView> 
-            <CounterProvider>
+            {/* <CounterProvider> */}
+            <Provider store={store}>
             <Drawer screenOptions={{
                 drawerStyle: { backgroundColor: '#000' },
                 drawerActiveTintColor: "#0f0",
@@ -44,7 +47,8 @@ export default function Layout(){
                     }}
                 />
             </Drawer>
-        </CounterProvider>
+            </Provider>
+        {/* </CounterProvider> */}
             {/* <Stack>
                 <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
             </Stack> */}
