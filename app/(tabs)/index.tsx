@@ -29,6 +29,12 @@ export default function Home() {
       <Link href={'/loginn'}>
         <Text className="text-red-900 text-3xl">Login</Text>
       </Link>
+      <Link href={'/prop'}>
+        <Text className="text-blue-500 text-3xl">Prop Drilling</Text>
+      </Link>
+      <Link href={'/context-api'}>
+        <Text className="text-pink-200 text-3xl">Context Api</Text>
+      </Link>
       <StatusBar style="auto" />
     </View>
   );

@@ -4,10 +4,12 @@ import { Slot, Stack } from "expo-router";
 import { Drawer } from 'expo-router/drawer';
 import "../global.css"
 import { MaterialIcons } from "@expo/vector-icons";
+import { CounterProvider } from "./store/CounterContext";
 
 export default function Layout(){
     return(
         <GestureHandlerRootView> 
+            <CounterProvider>
             <Drawer screenOptions={{
                 drawerStyle: { backgroundColor: '#000' },
                 drawerActiveTintColor: "#0f0",
@@ -42,6 +44,7 @@ export default function Layout(){
                     }}
                 />
             </Drawer>
+        </CounterProvider>
             {/* <Stack>
                 <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
             </Stack> */}
